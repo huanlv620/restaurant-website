@@ -110,11 +110,11 @@
 }
 // End Hero
 
-// Info
-.info {
+// Star
+.star {
     padding: 63px 0;
     margin-top: 96px;
-    background: url("../imgs/info.png") no-repeat center / cover;
+    background: url("../imgs/star.png") no-repeat center / cover;
 
     &__inner {
         display: flex;
@@ -145,7 +145,7 @@
         line-height: 141.667%;
     }
 }
-// End Info
+// End Star
 
 // Popular Food
 .popular-food {
@@ -166,6 +166,15 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        margin-bottom: 36px;
+    }
+
+    &__see-all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        color: #fb8f2c;
     }
 }
 
@@ -232,4 +241,115 @@
     }
 }
 // End Popular Food
+
+// Info
+.info {
+    margin-top: 150px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: -1px;
+        background: url("../imgs/info.png") no-repeat center / cover,
+            linear-gradient(
+                269deg,
+                rgba(0, 0, 0, 0.2) 21.08%,
+                rgba(0, 0, 0, 0) 38.98%
+            );
+        border: 1px solid #fbf8fc;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        color: #fff;
+        font-family: "Libre Bodoni";
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%;
+    }
+
+    &__address,
+    &__number,
+    &__email {
+        color: #fff;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 73px 144px;
+        background: #fb8f2c;
+    }
+
+    &__open {
+        color: #111114;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 296px;
+    }
+
+    &__row + &__row {
+        margin-top: 10px;
+    }
+}
+// End Info
+
+// Out Menu
+.out-menu {
+    margin-top: 150px;
+
+    &__sub-title {
+        color: var(--white-80, rgba(255, 255, 255, 0.8));
+        text-align: center;
+    }
+    &__heading {
+        margin: 10px 0 20px;
+        text-align: center;
+    }
+    &__desc {
+        width: 601px;
+        margin: 0 auto 60px;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        color: #fff;
+        font-family: "Libre Bodoni";
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 133.333%;
+        padding: 0 30px;
+
+        &:hover {
+            color: #fb8f2c;
+        }
+
+        &:hover ~ .menu {
+            display: grid;
+        }
+    }
+}
+
+// End Out Menu
 // END MAIN

@@ -222,6 +222,51 @@ textarea {
   color: #fb8f2c;
 }
 
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: left right;
+  gap: 30px;
+  justify-content: space-between;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__item + .menu__item {
+  margin-top: 40px;
+}
+.menu__img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.menu__title, .menu__price {
+  width: 302px;
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+.menu__title {
+  margin: 0 auto 0 20px;
+}
+.menu__title--small {
+  width: 400px;
+}
+.menu__price {
+  width: initial;
+}
+
 .header {
   padding: 30px 0;
 }
@@ -309,29 +354,29 @@ textarea {
   top: 288px;
 }
 
-.info {
+.star {
   padding: 63px 0;
   margin-top: 96px;
-  background: url("../imgs/info.png") no-repeat center/cover;
+  background: url("../imgs/star.png") no-repeat center/cover;
 }
-.info__inner {
+.star__inner {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 127px;
 }
-.info__item {
+.star__item {
   display: flex;
   gap: 19px;
 }
-.info__number {
+.star__number {
   color: #fff;
   font-family: "Libre Bodoni";
   font-size: 6.4rem;
   font-weight: 500;
   line-height: 115.625%;
 }
-.info__text {
+.star__text {
   max-width: 148px;
   color: #fff;
   font-family: "Libre Bodoni";
@@ -355,6 +400,14 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-bottom: 36px;
+}
+.popular-food__see-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  color: #fb8f2c;
 }
 
 .food-item__img-wrap {
@@ -407,6 +460,92 @@ textarea {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.info {
+  margin-top: 150px;
+}
+.info__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: -1px;
+  background: url("../imgs/info.png") no-repeat center/cover, linear-gradient(269deg, rgba(0, 0, 0, 0.2) 21.08%, rgba(0, 0, 0, 0) 38.98%);
+  border: 1px solid #fbf8fc;
+}
+.info__title {
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 141.667%;
+}
+.info__address, .info__number, .info__email {
+  color: #fff;
+}
+.info__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 73px 144px;
+  background: #fb8f2c;
+}
+.info__open {
+  color: #111114;
+}
+.info__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 296px;
+}
+.info__row + .info__row {
+  margin-top: 10px;
+}
+
+.out-menu {
+  margin-top: 150px;
+}
+.out-menu__sub-title {
+  color: var(--white-80, rgba(255, 255, 255, 0.8));
+  text-align: center;
+}
+.out-menu__heading {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+.out-menu__desc {
+  width: 601px;
+  margin: 0 auto 60px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.out-menu__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.out-menu__link {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 133.333%;
+  padding: 0 30px;
+}
+.out-menu__link:hover {
+  color: #fb8f2c;
+}
+.out-menu__link:hover ~ .menu {
+  display: grid;
 }
 
 /*# sourceMappingURL=mai.css.map */
