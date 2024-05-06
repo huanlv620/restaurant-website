@@ -1,0 +1,19 @@
+// Nav
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        padding: 5px 17px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.6rem;
+        line-height: 162.5%;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #fb8f2c;
+        }
+    }
+}
