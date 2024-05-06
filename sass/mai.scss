@@ -171,6 +171,7 @@
 
 .food-item {
     &__img-wrap {
+        display: block;
         width: 370px;
         height: 300px;
         overflow: hidden;
@@ -209,7 +210,19 @@
     }
 
     &__order {
+        position: relative;
         color: #fff;
+    }
+
+    &__order::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+        content: "";
+        display: block;
+        height: 1px;
+        background: #fb8f2c;
     }
 
     &__stars {

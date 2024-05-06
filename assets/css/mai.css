@@ -358,6 +358,7 @@ textarea {
 }
 
 .food-item__img-wrap {
+  display: block;
   width: 370px;
   height: 300px;
   overflow: hidden;
@@ -389,7 +390,18 @@ textarea {
   color: rgba(255, 255, 255, 0.8);
 }
 .food-item__order {
+  position: relative;
   color: #fff;
+}
+.food-item__order::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  content: "";
+  display: block;
+  height: 1px;
+  background: #fb8f2c;
 }
 .food-item__stars {
   display: flex;
