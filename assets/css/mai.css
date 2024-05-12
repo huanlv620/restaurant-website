@@ -226,8 +226,12 @@ textarea {
   position: absolute;
   left: 0;
   right: 0;
-  top: 70px;
+  top: 33px;
   display: none;
+  padding-top: 65px;
+}
+.menu__inner {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: left right;
   gap: 30px;
@@ -239,6 +243,12 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.menu__item:hover {
+  cursor: pointer;
+}
+.menu__item:hover .menu__title, .menu__item:hover .menu__price {
+  color: #fb8f2c;
 }
 .menu__item + .menu__item {
   margin-top: 40px;
@@ -533,6 +543,12 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+.out-menu__item:hover .menu {
+  display: grid;
+}
+.out-menu__item--active .menu {
+  display: grid;
+}
 .out-menu__link {
   color: #fff;
   font-family: "Libre Bodoni";
@@ -543,9 +559,6 @@ textarea {
 }
 .out-menu__link:hover {
   color: #fb8f2c;
-}
-.out-menu__link:hover ~ .menu {
-  display: grid;
 }
 
 /*# sourceMappingURL=mai.css.map */

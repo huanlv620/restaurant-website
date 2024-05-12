@@ -333,6 +333,13 @@
         justify-content: center;
     }
 
+    &__item:hover .menu {
+        display: grid;
+    }
+    &__item--active .menu {
+        display: grid;
+    }
+
     &__link {
         color: #fff;
         font-family: "Libre Bodoni";
@@ -343,10 +350,6 @@
 
         &:hover {
             color: #fb8f2c;
-        }
-
-        &:hover ~ .menu {
-            display: grid;
         }
     }
 }
