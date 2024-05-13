@@ -693,4 +693,110 @@
     }
 }
 // End Visit Our Restaurant
+
+// Blog
+.blog {
+    margin-top: 150px;
+
+    &__top {
+        text-align: center;
+    }
+
+    &__sub-heading {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    &__heading {
+        margin: 20px 0 60px 0;
+    }
+
+    &__content {
+        display: flex;
+        gap: 30px;
+
+        &--reverse {
+            flex-direction: row-reverse;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__content + &__content {
+        margin-top: 60px;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__right {
+        color: #fff;
+    }
+
+    &__title {
+        margin: 20px 0;
+        font-family: "Libre Bodoni";
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 133.333%;
+    }
+
+    &__desc {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%;
+    }
+
+    &__row {
+        display: flex;
+        gap: 111px;
+        margin: 30px 0;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            background: #fb8f2c;
+        }
+    }
+
+    &__see-all {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+        color: #fb8f2c;
+
+        &-wrap {
+            text-align: center;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            display: none;
+            height: 1px;
+            background: #fb8f2c;
+        }
+
+        &:hover::after {
+            display: block;
+        }
+    }
+}
+// End Blog
 // END MAIN
