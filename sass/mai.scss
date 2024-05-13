@@ -355,4 +355,342 @@
 }
 
 // End Out Menu
+
+// Our Restaurant
+.our-restaurant {
+    margin-top: 600px;
+    text-align: center;
+
+    &__desc {
+        max-width: 625px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        height: 600px;
+        margin-top: 60px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        height: 100%;
+    }
+
+    &__img-wrap {
+        height: 285px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+// End Our Restaurant
+
+// BOOK NOW
+.book-now {
+    margin-top: 150px;
+
+    &__inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__left {
+        padding: 40px;
+        background: #fb8f2c;
+    }
+
+    &__heading {
+        margin-bottom: 40px;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 125%;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%;
+    }
+
+    &__content {
+        color: #111114;
+
+        &-wrap {
+            display: flex;
+            gap: 99px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 3px;
+    }
+
+    &__number {
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 125%;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 4px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 171.429%;
+    }
+
+    &__arrow {
+        align-self: center;
+        width: 10px;
+        height: 5px;
+        object-fit: cover;
+    }
+
+    &__row-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 14px;
+    }
+
+    &__btn {
+        width: 311px;
+        height: 56px;
+        margin-top: 74px;
+        color: #fff;
+        background: #111114;
+        text-align: center;
+
+        &:hover {
+            color: #fb8f2c;
+        }
+    }
+
+    &__right {
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__decor {
+        position: absolute;
+        right: -70px;
+        top: -70px;
+        width: 99px;
+    }
+}
+// END BOOK NOW
+
+// Our Daily Offers
+.our-daily {
+    margin-top: 150px;
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 52px;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__left {
+        padding: 23px 30px;
+        background: url(../imgs/our-daily.png) no-repeat center / cover;
+
+        &-inner {
+            width: 510px;
+            padding: 72px 0 40px 41px;
+            border: 1px solid #fbf8fc;
+        }
+
+        &-time {
+            color: #fff;
+            font-size: 2.8rem;
+            font-weight: 600;
+            line-height: 135.714%;
+        }
+
+        &-row {
+            display: flex;
+            align-items: end;
+            gap: 6px;
+            margin: 8px 0 14px 0;
+        }
+    }
+
+    &__sale {
+        font-family: Playball;
+        color: #fb8f2c;
+        font-size: 8.4rem;
+        line-height: 97.619%;
+    }
+
+    &__off {
+        margin-bottom: 5px;
+        color: #fff;
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 138.462%;
+    }
+
+    &__text {
+        max-width: 254px;
+        color: #fff;
+    }
+
+    &__btn {
+        margin-top: 48px;
+        padding: 8px 30px;
+        background: rgba(251, 143, 44, 0.8);
+        color: #fff;
+        font-weight: 600;
+
+        &:hover {
+            color: rgb(255 255 255 / 80%);
+        }
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__img {
+        width: 130px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__col {
+        margin: 0 34px 0 28px;
+    }
+
+    &__title {
+        margin-top: 11px;
+        font-family: "Libre Bodoni";
+        color: #fff;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 141.667%;
+    }
+    &__desc {
+        margin-top: 16px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    &__price {
+        margin-top: 8px;
+        color: #fff;
+        font-family: "Libre Bodoni";
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 133.333%;
+    }
+}
+// End Our Daily Offers
+
+// Our service
+.our-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+    margin-top: 150px;
+    background: #fb8f2c;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    &__text {
+        white-space: nowrap;
+        color: #111114;
+        font-family: Butler;
+        font-size: 3.8rem;
+        font-weight: 500;
+        line-height: 110.526%;
+    }
+}
+// End Our service
+
+// Visit Our Restaurant
+.visit {
+    margin-top: 150px;
+
+    &__text {
+        margin: 16px auto 40px auto;
+        max-width: 768px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        color: #fff;
+    }
+
+    &__img-wrap {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        transition: scale 0.5s;
+
+        &:hover {
+            scale: 1.1;
+            cursor: pointer;
+        }
+    }
+
+    &__name {
+        margin-top: 30px;
+        font-family: "Libre Bodoni";
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 133.333%;
+    }
+
+    &__desc {
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%;
+    }
+}
+// End Visit Our Restaurant
 // END MAIN

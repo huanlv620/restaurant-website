@@ -561,4 +561,281 @@ textarea {
   color: #fb8f2c;
 }
 
+.our-restaurant {
+  margin-top: 600px;
+  text-align: center;
+}
+.our-restaurant__desc {
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+.our-restaurant__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  height: 600px;
+  margin-top: 60px;
+}
+.our-restaurant__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  height: 100%;
+}
+.our-restaurant__img-wrap {
+  height: 285px;
+}
+.our-restaurant__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-now {
+  margin-top: 150px;
+}
+.book-now__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.book-now__left {
+  padding: 40px;
+  background: #fb8f2c;
+}
+.book-now__heading {
+  margin-bottom: 40px;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 125%;
+}
+.book-now__title {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 141.667%;
+}
+.book-now__content {
+  color: #111114;
+}
+.book-now__content-wrap {
+  display: flex;
+  gap: 99px;
+}
+.book-now__row {
+  display: flex;
+  gap: 3px;
+}
+.book-now__number {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 125%;
+}
+.book-now__block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 4px;
+}
+.book-now__text {
+  font-size: 14px;
+  line-height: 171.429%;
+}
+.book-now__arrow {
+  align-self: center;
+  width: 10px;
+  height: 5px;
+  object-fit: cover;
+}
+.book-now__row-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 14px;
+}
+.book-now__btn {
+  width: 311px;
+  height: 56px;
+  margin-top: 74px;
+  color: #fff;
+  background: #111114;
+  text-align: center;
+}
+.book-now__btn:hover {
+  color: #fb8f2c;
+}
+.book-now__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.book-now__decor {
+  position: absolute;
+  right: -70px;
+  top: -70px;
+  width: 99px;
+}
+
+.our-daily {
+  margin-top: 150px;
+}
+.our-daily__heading {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.our-daily__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.our-daily__left {
+  padding: 23px 30px;
+  background: url(../imgs/our-daily.png) no-repeat center/cover;
+}
+.our-daily__left-inner {
+  width: 510px;
+  padding: 72px 0 40px 41px;
+  border: 1px solid #fbf8fc;
+}
+.our-daily__left-time {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 135.714%;
+}
+.our-daily__left-row {
+  display: flex;
+  align-items: end;
+  gap: 6px;
+  margin: 8px 0 14px 0;
+}
+.our-daily__sale {
+  font-family: Playball;
+  color: #fb8f2c;
+  font-size: 8.4rem;
+  line-height: 97.619%;
+}
+.our-daily__off {
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 138.462%;
+}
+.our-daily__text {
+  max-width: 254px;
+  color: #fff;
+}
+.our-daily__btn {
+  margin-top: 48px;
+  padding: 8px 30px;
+  background: rgba(251, 143, 44, 0.8);
+  color: #fff;
+  font-weight: 600;
+}
+.our-daily__btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.our-daily__right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+.our-daily__item {
+  display: flex;
+}
+.our-daily__img {
+  width: 130px;
+  height: 100%;
+  object-fit: cover;
+}
+.our-daily__col {
+  margin: 0 34px 0 28px;
+}
+.our-daily__title {
+  margin-top: 11px;
+  font-family: "Libre Bodoni";
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 141.667%;
+}
+.our-daily__desc {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.our-daily__price {
+  margin-top: 8px;
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+
+.our-service {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0;
+  margin-top: 150px;
+  background: #fb8f2c;
+}
+.our-service__item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.our-service__text {
+  white-space: nowrap;
+  color: #111114;
+  font-family: Butler;
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 110.526%;
+}
+
+.visit {
+  margin-top: 150px;
+}
+.visit__text {
+  margin: 16px auto 40px auto;
+  max-width: 768px;
+}
+.visit__list {
+  display: flex;
+  gap: 30px;
+}
+.visit__item {
+  color: #fff;
+}
+.visit__img-wrap {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  overflow: hidden;
+}
+.visit__img {
+  width: 100%;
+  transition: scale 0.5s;
+}
+.visit__img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.visit__name {
+  margin-top: 30px;
+  font-family: "Libre Bodoni";
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+.visit__desc {
+  font-family: "Plus Jakarta Sans";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 155.556%;
+}
+
 /*# sourceMappingURL=mai.css.map */
