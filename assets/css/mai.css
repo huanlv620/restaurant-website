@@ -211,6 +211,10 @@ textarea {
   filter: brightness(0) saturate(100%) invert(100%) sepia(86%) saturate(2%) hue-rotate(71deg) brightness(105%) contrast(101%);
 }
 
+.white-space {
+  white-space: nowrap;
+}
+
 .nav__list {
   display: flex;
   align-items: center;
@@ -933,6 +937,7 @@ textarea {
   padding: 70px 0;
   margin-top: 150px;
   background: url("../imgs/news-letter.png") no-repeat center/cover;
+  color: #fff;
 }
 .news-letter__inner {
   display: flex;
@@ -940,23 +945,19 @@ textarea {
   align-items: center;
 }
 .news-letter__heading {
-  color: #fff;
-  font-family: "Libre Bodoni";
   font-size: 4rem;
   line-height: 125%;
 }
 .news-letter__desc {
   max-width: 405px;
-  color: #fff;
 }
 .news-letter__input-wrap {
   display: flex;
-  width: 470px;
+  max-width: 470px;
   border-bottom: 1px solid #fff;
 }
 .news-letter__input {
   flex: 1;
-  color: #fff;
   padding: 15px 0 15px 0;
 }
 .news-letter__input::placeholder {
@@ -967,6 +968,43 @@ textarea {
 .news-letter__arrow {
   cursor: pointer;
   padding-left: 15px;
+}
+
+.footer {
+  padding: 150px 55px;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.4fr 1fr 2.5fr;
+  gap: 77px;
+}
+.footer__text {
+  max-width: 211px;
+  margin: 76px 0 18px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.footer__heading {
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 130%;
+}
+.footer__link {
+  display: flex;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8px 0;
+}
+.footer__link--email {
+  color: #fb8f2c;
+}
+.footer__link:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=mai.css.map */

@@ -846,3 +846,49 @@
 }
 // End Newsletter
 // END MAIN
+
+// FOOTER
+.footer {
+    padding: 150px 55px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2.4fr 1fr 2.5fr;
+        gap: 77px;
+    }
+
+    &__text {
+        max-width: 211px;
+        margin: 76px 0 18px 0;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+
+    &__heading {
+        margin-bottom: 16px;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__link {
+        display: flex;
+        color: rgba(255, 255, 255, 0.8);
+        padding: 8px 0;
+
+        &--email {
+            color: #fb8f2c;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+// END FOOTER
